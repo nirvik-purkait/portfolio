@@ -9,20 +9,20 @@ import Projects from "./components/body/project/Projects";
 import Contact from "./components/body/contact/Contact";
 
 function App() {
-	return (
-		<div className="App">
-			<Routes>
-				<Route path="/" element={<Body />}>
-					<Route index element={<Home />} />
-					<Route path="/home" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/contact" element={<Contact />} />
-				</Route>
-				<Route path="*" element={<NoPageFound />} />
-			</Routes>
-		</div>
-	);
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Body />}>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NoPageFound />} />
+        </Route>
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
